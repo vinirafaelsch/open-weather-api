@@ -1,2 +1,8 @@
+# envs
 .env
+
+# pycache
+__pycache__
 app/__pycache__
+
+.coverage

@@ -44,7 +44,7 @@ def get_progress(user_id):
     if user_id in weather_data:
         collected = len(weather_data[user_id]['cities'])
         total = weather_data[user_id]['total']
-        progress = (collected / total) * 100
+        progress = collected / total
         formated_progress = "{:.2%}".format(progress)
         return jsonify({ "Progresso": formated_progress }), 200
     else:
