@@ -24,13 +24,12 @@ Utilizei python-dotenv para carregar variáveis de ambiente a partir de um arqui
 ### Passos para Instalar o Docker
 Caso você não tenha o Docker instalado, siga as instruções nos links abaixo para fazer o download e a instalação:
 - [Docker para Windows](https://docs.docker.com/desktop/install/windows-install/)
-- [Docker para Mac](https://docs.docker.com/desktop/install/mac-install/)
 - [Docker para Linux](https://docs.docker.com/desktop/install/linux-install/)
 
 ### Passos para Construir e Executar a Imagem Docker
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/open-weather-api.git
+   git clone https://github.com/vinirafaelsch/open-weather-api.git
    cd open-weather-api
 2. Construa a imagem Docker:
    ```bash
