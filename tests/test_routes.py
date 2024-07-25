@@ -12,7 +12,6 @@ def client():
     yield client
 
 def test_collect_weather(client, monkeypatch):
-    # Mocking the OpenWeather API response
     def mock_get(url):
         class MockResponse:
             def __init__(self, json_data, status_code):
@@ -42,7 +41,6 @@ def test_collect_weather(client, monkeypatch):
 
     monkeypatch.setattr('requests.get', mock_get)
 
-    # Making the POST request to collect weather data
     response = client.post('/weather', data=json.dumps({
         'user_id': 'user_1',
         'city_ids': ['city_id_1', 'city_id_2']
